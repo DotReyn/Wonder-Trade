@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "wondertrade",
+  "version": "${version}",
+  "name": "WonderTrade",
+  "description": "Wonder Trade plugin for Cobblemon",
+  "authors": [
+    "DotReyn"
+  ],
+  "contact": {
+    "repo": "https://github.com/DotReyn/Wonder-Trade"
+  },
+  "license": "MIT",
+  "icon": "assets/wondertrade/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      {
+        "adapter": "kotlin",
+        "value": "dot.reyn.wondertrade.WonderTrade"
+      }
+    ]
+  },
+  "mixins": [
+    "wondertrade.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.14",
+    "fabric": "*",
+    "minecraft": "1.19.2",
+    "fabric-language-kotlin": ">=1.9.1+kotlin.1.8.10",
+    "cobblemon": ">=1.2.0"
+  }
+}
